@@ -1,0 +1,14 @@
+aside {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.line {
+  position: relative;
+  top: 20px;
+  left: 11px;
+  display: block;
+  height: 135px;
+  width: 2px;
+  background-color: lightgray;
+}

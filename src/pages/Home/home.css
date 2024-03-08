@@ -1,0 +1,112 @@
+.home {
+  height: 100%;
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  padding: 20px 80px;
+}
+
+.main {
+  grid-column: 2/3;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 150px;
+}
+
+.main header {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.main header span {
+  color: #9fd3c7;
+}
+
+.main header div h1 {
+  font-size: 62px;
+  margin: 0;
+}
+
+.main header div span {
+  color: #b1a4d6;
+  font-size: 24px;
+}
+
+.main header p {
+  color: #b1a4d6;
+  font-size: 16px;
+}
+
+.main header a {
+  text-decoration: none;
+  margin-top: 15px;
+  align-self: flex-start;
+  padding: 20px 60px;
+  background-color: transparent;
+  color: #42b883;
+  font-size: 16px;
+  border: 3px solid #42b883;
+}
+
+.main header a:hover {
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+  .home {
+    padding: 20px;
+    grid-template-columns: 0;
+    grid-template-rows: repeat(3, 1fr);
+  }
+
+  aside {
+    grid-row: 1/2;
+    flex-direction: row;
+    gap: 60px;
+  }
+  .line {
+    display: none;
+  }
+  .main {
+    grid-row: 2/3;
+    align-items: center;
+    text-align: center;
+  }
+
+  .main header a {
+    align-self: center;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .home {
+    padding: 10px 0;
+  }
+  .main {
+    gap: 100px;
+  }
+  .main header {
+    gap: 50px;
+  }
+  .main header div h1 {
+    font-size: 42px;
+    margin-bottom: 10px;
+  }
+  .main header div span {
+    font-size: 16px;
+  }
+  .main header p {
+    font-size: 14px;
+  }
+
+  nav ol {
+    gap: 40px;
+    font-size: 14px;
+  }
+
+  .main header a {
+    margin-top: 0;
+  }
+}
