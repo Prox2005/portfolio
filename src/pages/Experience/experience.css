@@ -1,0 +1,37 @@
+.experience {
+  display: grid;
+  height: 100%;
+  grid-template-columns: 200px 1fr;
+}
+
+.experience main {
+  grid-column: 2;
+}
+
+.experience h1 {
+  margin-top: 60px;
+  font-size: 36px;
+}
+
+.experience__projects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 80px;
+  margin: 80px 0;
+}
+
+@media screen and (max-width: 750px) {
+  .experience {
+    padding: 20px 0;
+    grid-template-columns: 100px 1fr;
+    grid-template-rows: 100px 1fr;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .experience main {
+    grid-row: 2/3;
+    grid-column: 1/3;
+  }
+}

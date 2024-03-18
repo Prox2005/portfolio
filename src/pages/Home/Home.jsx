@@ -7,7 +7,7 @@ const Home = () => {
   return (
     <section className="home">
       <Aside />
-      <main className="main">
+      <main className="home__main">
         <Nav />
         <header>
           <span>Hola, mi nombre es</span>

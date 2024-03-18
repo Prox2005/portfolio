@@ -1,4 +1,4 @@
-import { Home } from "./pages/index";
+import { Home, Experience } from "./pages/index";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./App.css";
 
@@ -8,6 +8,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/experiencia" element={<Experience />} />
         </Routes>
       </BrowserRouter>
     </div>

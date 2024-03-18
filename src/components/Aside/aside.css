@@ -1,8 +1,11 @@
 aside {
+  position: fixed;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
+
 .line {
   position: relative;
   top: 20px;
@@ -11,4 +14,17 @@ aside {
   height: 135px;
   width: 2px;
   background-color: lightgray;
+}
+
+@media screen and (max-width: 600px) {
+  aside {
+    position: relative;
+    grid-row: 1/2;
+    flex-direction: row;
+    gap: 60px;
+    height: auto;
+  }
+  .line {
+    display: none;
+  }
 }

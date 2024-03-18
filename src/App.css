@@ -5,13 +5,30 @@ body,
 #root,
 .App {
   height: 100%;
+  overflow: auto;
   margin: 0;
   padding: 0;
   background-color: #233142;
+  background: linear-gradient(
+    109.6deg,
+    rgb(36, 45, 57) 11.2%,
+    rgb(16, 37, 60) 51.2%,
+    rgb(0, 0, 0) 98.6%
+  );
   color: white;
   font-family: "Open Sans", sans-serif;
 }
 
 * {
   box-sizing: border-box;
+}
+
+.App {
+  padding: 20px 80px;
+}
+
+@media screen and (max-width: 400px) {
+  .App {
+    padding: 20px 40px;
+  }
 }

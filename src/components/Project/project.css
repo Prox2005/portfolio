@@ -1,0 +1,43 @@
+.project {
+  display: flex;
+  gap: 80px;
+  padding: 40px 20px;
+}
+
+.project__data {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  gap: 20px;
+}
+
+.project__data h3 {
+  font-size: 28px;
+  margin: 0;
+}
+
+.project__data p {
+  color: #dbd8e3;
+  font-size: 14px;
+}
+
+.project:hover {
+  background-color: #233142;
+  border-radius: 8px;
+}
+
+@media screen and (max-width: 1000px) {
+  .project {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .project__data {
+    width: 250px;
+  }
+  .project img {
+    height: 100px;
+  }
+}

@@ -16,3 +16,10 @@ nav ol li a {
 nav ol li:hover {
   border-bottom: 2px solid #b1a4d6;
 }
+
+@media screen and (max-width: 500px) {
+  nav ol {
+    gap: 40px;
+    font-size: 14px;
+  }
+}

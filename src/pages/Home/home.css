@@ -2,10 +2,9 @@
   height: 100%;
   display: grid;
   grid-template-columns: 200px 1fr;
-  padding: 20px 80px;
 }
 
-.main {
+.home__main {
   grid-column: 2/3;
   height: 500px;
   display: flex;
@@ -13,32 +12,37 @@
   gap: 150px;
 }
 
-.main header {
+.home__main header {
   display: flex;
   flex-direction: column;
   gap: 30px;
 }
 
-.main header span {
+.home__,
+main header span {
   color: #9fd3c7;
 }
 
-.main header div h1 {
+.home__,
+main header div h1 {
   font-size: 62px;
   margin: 0;
 }
 
-.main header div span {
+.home__,
+main header div span {
   color: #b1a4d6;
   font-size: 24px;
 }
 
-.main header p {
+.home__,
+main header p {
   color: #b1a4d6;
   font-size: 16px;
 }
 
-.main header a {
+.home__,
+main header a {
   text-decoration: none;
   margin-top: 15px;
   align-self: flex-start;
@@ -49,7 +53,8 @@
   border: 3px solid #42b883;
 }
 
-.main header a:hover {
+.home__,
+main header a:hover {
   opacity: 0.6;
   cursor: pointer;
 }
@@ -58,25 +63,22 @@
   .home {
     padding: 20px;
     grid-template-columns: 0;
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-rows: 100px 1fr;
   }
 
-  aside {
-    grid-row: 1/2;
-    flex-direction: row;
-    gap: 60px;
-  }
-  .line {
-    display: none;
-  }
-  .main {
+  .home__,
+  main {
     grid-row: 2/3;
     align-items: center;
     text-align: center;
   }
 
-  .main header a {
+  .home__,
+  main header a {
     align-self: center;
+  }
+  .home__main {
+    gap: 60px;
   }
 }
 
@@ -84,29 +86,30 @@
   .home {
     padding: 10px 0;
   }
-  .main {
+  .home__,
+  main {
     gap: 100px;
   }
-  .main header {
+  .home__,
+  main header {
     gap: 50px;
   }
-  .main header div h1 {
+  .home__,
+  main header div h1 {
     font-size: 42px;
     margin-bottom: 10px;
   }
-  .main header div span {
+  .home__,
+  main header div span {
     font-size: 16px;
   }
-  .main header p {
+  .home__,
+  main header p {
     font-size: 14px;
   }
 
-  nav ol {
-    gap: 40px;
-    font-size: 14px;
-  }
-
-  .main header a {
+  .home__,
+  main header a {
     margin-top: 0;
   }
 }
