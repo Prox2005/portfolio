@@ -18,6 +18,8 @@ const Experience = () => {
               url={project.url}
               img={project.img}
               descripcion={project.description}
+              tech={project.tech || null}
+              repo={project.repo}
             />
           ))}
         </article>
